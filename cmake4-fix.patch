@@ -1,0 +1,24 @@
+diff -ura vkpeak-new/.git/modules/ncnn/modules/glslang/index vkpeak/.git/modules/ncnn/modules/glslang/index
+diff -ura vkpeak-new/ncnn/CMakeLists.txt vkpeak/ncnn/CMakeLists.txt
+--- vkpeak-new/ncnn/CMakeLists.txt	2025-06-14 18:02:14.144492877 +0100
++++ vkpeak/ncnn/CMakeLists.txt	2025-06-14 18:02:31.695665503 +0100
+@@ -21,7 +21,7 @@
+ set(NCNN_VERSION_STRING ${NCNN_VERSION_MAJOR}.${NCNN_VERSION_MINOR}.${NCNN_VERSION_PATCH})
+ message(STATUS "NCNN_VERSION_STRING = ${NCNN_VERSION_STRING}")
+ 
+-cmake_minimum_required(VERSION 2.8.12)
++cmake_minimum_required(VERSION 3.15)
+ 
+ if(NOT CMAKE_BUILD_TYPE)
+     set(CMAKE_BUILD_TYPE release CACHE STRING "Choose the type of build" FORCE)
+diff -ura vkpeak-new/ncnn/glslang/SPIRV/SpvBuilder.h vkpeak/ncnn/glslang/SPIRV/SpvBuilder.h
+--- vkpeak-new/ncnn/glslang/SPIRV/SpvBuilder.h	2025-06-14 18:02:14.153691574 +0100
++++ vkpeak/ncnn/glslang/SPIRV/SpvBuilder.h	2025-06-14 18:03:58.087478155 +0100
+@@ -63,6 +63,7 @@
+ #include <stack>
+ #include <unordered_map>
+ #include <map>
++#include <cstdint>
+ 
+ namespace spv {
+ 

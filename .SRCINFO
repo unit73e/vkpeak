@@ -1,7 +1,7 @@
 pkgbase = vkpeak
 	pkgdesc = A tool which profiles Vulkan devices to find their peak capacities
 	pkgver = 20240505
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/nihui/vkpeak
 	arch = x86_64
 	license = MIT
@@ -13,7 +13,9 @@ pkgbase = vkpeak
 	depends = vulkan-icd-loader
 	source = vkpeak::git+https://github.com/nihui/vkpeak.git#tag=20240505
 	source = ncnn::git+https://github.com/Tencent/ncnn.git
+	source = cmake4-fix.patch
+	sha256sums = 804733ce178f8a3c5a5e1139fd48708286ea40095a0c835e7796d63fbb85fa92
 	sha256sums = SKIP
-	sha256sums = SKIP
+	sha256sums = 0788204a831bb2c87dc6ab30e84377a91938671c602e986959740b96c1f733b2
 
 pkgname = vkpeak
